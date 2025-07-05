@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { AdminSidebar } from '@/components/admin/AdminSidebar';
 import { Dashboard } from '@/components/admin/Dashboard';
@@ -11,6 +10,7 @@ import { PromotionsManagement } from '@/components/admin/PromotionsManagement';
 import { FinancialManagement } from '@/components/admin/FinancialManagement';
 import { SettingsManagement } from '@/components/admin/SettingsManagement';
 import { AdminsManagement } from '@/components/admin/AdminsManagement';
+import { NotificationsManagement } from '@/components/admin/NotificationsManagement';
 import { SidebarProvider } from '@/components/ui/sidebar';
 
 const Index = () => {
@@ -38,6 +38,8 @@ const Index = () => {
         return <SettingsManagement />;
       case 'admins':
         return <AdminsManagement />;
+      case 'notifications':
+        return <NotificationsManagement />;
       default:
         return <Dashboard />;
     }

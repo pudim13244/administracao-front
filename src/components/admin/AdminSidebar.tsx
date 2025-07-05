@@ -1,4 +1,3 @@
-
 import { 
   LayoutDashboard, 
   ShoppingBag, 
@@ -9,7 +8,8 @@ import {
   Gift,
   DollarSign,
   Settings,
-  UserCog
+  UserCog,
+  Bell
 } from 'lucide-react';
 import {
   Sidebar,
@@ -79,6 +79,11 @@ const menuItems = [
     title: "Administradores",
     icon: UserCog,
     key: "admins",
+  },
+  {
+    title: "Notificações",
+    icon: Bell,
+    key: "notifications",
   },
 ];
 
